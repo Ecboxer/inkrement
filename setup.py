@@ -12,7 +12,11 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/Ecboxer/inkrement',
-    packages=setuptools.find_packages(),
+    packages=['inkrement'],
+    install_requires=[
+        'matplotlib.pyplot',
+        'matplotlib.patches'
+    ],
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
