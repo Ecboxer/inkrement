@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: inkrement
+Version: 0.0.1
+Summary: Incremental data visualization in python
+Home-page: https://github.com/Ecboxer/inkrement
+Author: Eric Boxer
+Author-email: ecb2198@columbia.edu
+License: UNKNOWN
+Description: # Inkrement #  
+        Matplotlib wrapper for incremental data analysis  
+        
+        #### Requirements ####  
+        Matplotlib
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
