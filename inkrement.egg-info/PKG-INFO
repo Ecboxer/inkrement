@@ -9,6 +9,8 @@ License: UNKNOWN
 Description: # Inkrement #  
         Matplotlib wrapper for incremental data analysis  
         
+        ## Installing ##  
+        
         #### Requirements ####  
         Matplotlib
         

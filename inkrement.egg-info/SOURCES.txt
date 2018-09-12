@@ -1,7 +1,7 @@
 README.md
 setup.py
 inkrement/__init__.py
-inkrement/lag.py
+inkrement/core.py
 inkrement.egg-info/PKG-INFO
 inkrement.egg-info/SOURCES.txt
 inkrement.egg-info/dependency_links.txt
