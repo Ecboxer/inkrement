@@ -14,8 +14,7 @@ setuptools.setup(
     url='https://github.com/Ecboxer/inkrement',
     packages=['inkrement'],
     install_requires=[
-        'matplotlib.pyplot',
-        'matplotlib.patches'
+        'matplotlib.pyplot>=2.2.3'
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
