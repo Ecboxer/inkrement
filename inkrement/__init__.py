@@ -37,4 +37,3 @@ def plot_lag(x, y, n, group = 0, lag = 0):
     for i in range(l + 1): #Create legend patches
         patches.append(matplotlib.patches.Patch(color=blues[-1-i], label='{0} [{1}:{2}], {3} [{1}:{2}]'.format('x', (group - i) * n, (group - i + 1) * n, 'y')))
     matplotlib.pyplot.legend(handles=patches, bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0)
-
