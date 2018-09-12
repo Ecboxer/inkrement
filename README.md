@@ -17,6 +17,7 @@ Typical usage often looks like this:
 	inkrement.plot_lag(x, y, 10, 53, 8)
 	
 Output looks like this:  
+
 ![Example Plot](https://github.com/Ecboxer/inkrement/blob/master/docs/testplot.png)
 	
 Summary
