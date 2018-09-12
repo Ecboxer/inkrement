@@ -23,7 +23,7 @@ Output looks like this:
 Summary
 =======
 
-Matplotlib wrapper for incremental data analysis
+Matplotlib wrapper for incremental data visualization in python
 
 Requirements
 ============
