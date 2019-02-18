@@ -1,7 +1,10 @@
 name = 'inkrement'
 
-def plot_lag(x, y, n, group = 0, lag = 0):
-    """Scatter plot of group-th n elements of data and lag * n elements previous
+import matplotlib.pyplot
+import matplotlib.patches
+
+def plot_lag(x, y, n, group=0, lag=0, title=''):
+    """Scatter plot of group-th n elements of data and lag*n elements previous
     
     Parameters
     ----------
@@ -19,8 +22,6 @@ def plot_lag(x, y, n, group = 0, lag = 0):
     ------
     Scatterplot with labelled legend
     """
-    import matplotlib.pyplot
-    import matplotlib.patches
 
     blues = ['#f7fbff',
              '#deebf7',
@@ -54,8 +55,10 @@ def plot_lag(x, y, n, group = 0, lag = 0):
     for i in range(l + 1): #Create legend patches
         patches.append(matplotlib.patches.Patch(color=blues[-1-i], label='{0} [{1}:{2}], {3} [{1}:{2}]'.format('x', (group - i) * n, (group - i + 1) * n, 'y')))
     matplotlib.pyplot.legend(handles=patches, bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0)
+    matplotlib.pyplot.title(title)
+    matplotlib.pyplot.show()
 
-def inc_hist_cdf(x, n, start = 0, inc = 0, bins = 20):
+def inc_hist_cdf(x, n, start = 0, inc = 0, bins = 20, title=''):
     """
     Plots cumulative histograms of the group-th n * (i + 1) elements of x for 0 <= i <= lag
     
@@ -75,8 +78,6 @@ def inc_hist_cdf(x, n, start = 0, inc = 0, bins = 20):
     ------
     Overayed histograms for (inc + 1) * n observations beginning at start
     """
-    import matplotlib.pyplot
-    import matplotlib.patches
 
     blues = ['#f7fbff',
              '#deebf7',
@@ -108,3 +109,5 @@ def inc_hist_cdf(x, n, start = 0, inc = 0, bins = 20):
     for i in range(inc + 1): #Create legend patches
         patches.append(matplotlib.patches.Patch(color=blues[-(inc + 1) + i], label='{0} [{1}:{2}]'.format('x', start, start + n * (i + 1))))
     matplotlib.pyplot.legend(handles=patches, bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0)
+    matplotlib.pyplot.title(title)
+    matplotlib.pyplot.show()

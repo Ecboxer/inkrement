@@ -14,7 +14,7 @@ Typical scatterplot usage looks like this:
 	x = np.random.normal(0, 1, 1000)
 	y = np.random.normal(0, 1, 1000)
 	
-	inkrement.plot_lag(x, y, n = 10, group = 53, lag = 8)
+	inkrement.plot_lag(x, y, n=10, group=53, lag=8)
 	
 Output looks like this:  
 
@@ -30,7 +30,7 @@ Cumulative Histogram usage looks like:
 	
 	x = np.random.normal(0, 1, 1000)
 	
-	inkrement.inc_hist_cdf(x, n = 25, start = 167, inc = 8, bins = 15)
+	inkrement.inc_hist_cdf(x, n=25, start=167, inc=8, bins=15)
 	
 Output looks like this:  
 
